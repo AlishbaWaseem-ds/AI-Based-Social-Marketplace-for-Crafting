@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Care Hospital - Patient Portal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f0f7ff;
+            color: #333;
+        }
+        .header {
+            background: #0d6efd;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header span {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #0d6efd;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+        }
+        .info-row {
+            display: flex;
+            margin: 12px 0;
+        }
+        .info-label {
+            width: 160px;
+            font-weight: 600;
+            color: #555;
+        }
+        .doctor-box {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .doctor-avatar {
+            width: 80px;
+            height: 80px;
+            background: #0d6efd;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .status {
+            display: inline-block;
+            background: #d1e7dd;
+            color: #0f5132;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏥 City Care Hospital</h1>
+        <span>Patient Portal • Online</span>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2>Patient Information</h2>
+            <div class="info-row">
+                <div class="info-label">Patient Name:</div>
+                <div>Ahmed Khan</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Patient ID:</div>
+                <div>PT-2026-028</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Department:</div>
+                <div>General Medicine</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Status:</div>
+                <div><span class="status">Active</span></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Assigned Doctor</h2>
+            <div class="doctor-box">
+                <div class="doctor-avatar">DR</div>
+                <div>
+                    <strong style="font-size: 18px;">Dr. Sara Malik</strong><br>
+                    <span style="color: #666;">MBBS, FCPS (Medicine)</span><br>
+                    <span style="color: #0d6efd;">Senior Consultant</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Appointment Details</h2>
+            <div class="info-row">
+                <div class="info-label">Date:</div>
+                <div>30 September 2026</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Time:</div>
+                <div>10:30 AM</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Room:</div>
+                <div>Consultation Room 4</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Notes:</div>
+                <div>Follow-up visit • Bring previous reports</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Running inside Docker Container • FA23-BSE-028 • City Care Hospital Portal
+        </div>
+    </div>
+</body>
+</html>
